@@ -1,0 +1,71 @@
+.sliderInputEnteringContainer {
+    width: 100%;
+    height: 151px;
+    background-color: #bfd2b0;
+    margin-bottom: 90px;
+}
+
+.sliderInputEnteringContainer h2 {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 32px */
+    letter-spacing: -0.96px;
+    padding-bottom: 40px;
+}
+
+.inputRange{background-color: #fff;}
+
+.inputRange input{
+    width: 100%;
+
+}
+
+datalist {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    /*writing-mode: vertical-lr;*/
+    width: 100%;
+}
+
+option {
+    padding: 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+/*.phoneNumberEnteringContainer input {*/
+/*    display: flex;*/
+/*    width: 368px;*/
+/*    padding: 18px 16px;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*    gap: 10px;*/
+
+/*    border-radius: 8px;*/
+/*    border: 1px solid #B8C6CF;*/
+/*    background: #FFF;*/
+
+/*    color: #000;*/
+/*    font-size: 24px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: 24px; !* 100% *!*/
+/*}*/
+
+/*.phoneNumberEnteringContainer input::placeholder{*/
+/*    color:  #86969C;*/
+/*    font-size: 24px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: 24px; !* 100% *!*/
+/*}*/
+
+

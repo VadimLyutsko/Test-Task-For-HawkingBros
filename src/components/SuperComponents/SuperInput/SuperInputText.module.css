@@ -1,0 +1,125 @@
+.input {
+    display: flex;
+    width: 368px;
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #B8C6CF;
+    background: #FFF;
+
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+/*    Какие-то стили для стандартного инпута*/
+}
+
+.phoneNumberEnteringContainer input::placeholder {
+    color: #86969C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */vertical-align:super;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.superInput {
+    display: flex;
+    width: 368px;
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #B8C6CF;
+    background: #FFF;
+
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+}
+
+/*.superInputs input:hover {*/
+/*    border-radius: 8px;*/
+/*    border: 2px solid #7A5CFA;*/
+/*    background: #FFF;*/
+/*}*/
+
+.customClassNameInput:hover {
+    border-radius: 8px;
+    border: 2px solid #7A5CFA;
+    background: #FFF;
+}
+
+.customClassNameInput:focus {
+    border-radius: 8px;
+    border: 2px solid #7A5CFA;
+    background: #FFF;
+}
+
+.errorInput {
+    display: flex;
+    width: 368px;
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: #FFF;
+
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+    border: 2px solid #EB5757;
+}
+
+.errorInput:hover {
+    border-radius: 8px;
+    border: 2px solid #EB5757;
+    background: #FFF;
+}
+
+.errorInput:focus {
+    display: flex;
+    width: 368px;
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 8px;
+    border: 2px solid #EB5757;
+    background: #FFF;
+}
+
+.error {
+    color: #EB5757;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    padding-top: 10px;
+}
+
+.description {
+    color: #86969C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    padding-top: 10px;
+}
