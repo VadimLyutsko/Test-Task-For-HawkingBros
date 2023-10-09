@@ -32,23 +32,26 @@ export const SuperButton: React.FC<SuperButtonPropsType> = ({
         'operator': operatorEntering,
         'phoneNumber': phoneEntering,
         'price': priceObj.price,
-        'BuyOutOrLease':service
+        'BuyOutOrLease': service
     }
     const buttonHandler = () => {
         alert(JSON.stringify(submitJsonObj))
     }
 
+    const finalClassNameDisable = disabled ? styles.superButtonContainerRentDisable : styles.superButtonContainerRent
+    const finalClassName = disabled ? styles.superButtonContainerDisable : styles.superButtonContainer
+
 
     return (
-        <div>
+        <div className={styles.container}>
             {
                 //Костыль, правильнее замапить, чтобы сохранить универсальность компонента
                 priceObj.redeem ?
-                    <button disabled={disabled} className={styles.superButtonContainerRent} onClick={buttonHandler}>
+                    <button disabled={disabled} className={finalClassNameDisable} onClick={buttonHandler}>
                         <span> {`${priceObj.price}  ${textArrForButton[0]}`}</span> {textArrForButton[1]} {textArrForButton[2]}
                         <b>{textArrForButton[3]}</b> {textArrForButton[0]}
                     </button> :
-                    <button disabled={disabled} className={styles.superButtonContainer} onClick={buttonHandler}>
+                    <button disabled={disabled} className={finalClassName} onClick={buttonHandler}>
                         <span> {`${priceObj.price}  ${textArrForButton[0]}`}</span>{textArrForButton[1]}
                     </button>
             }

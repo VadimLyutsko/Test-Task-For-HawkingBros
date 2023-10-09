@@ -19,7 +19,7 @@ type MyValues = {
 
 // export type FormType = ReturnType<typeof useFormik>
 
-export const Form:React.FC = () => {
+export const Form: React.FC = () => {
 
     const dispatch = useAppDispatch()
     const operatorEntering = useAppSelector(store => store.operatorEntering.operatorEntering)
@@ -58,16 +58,16 @@ export const Form:React.FC = () => {
     return (
         <div>
             <PhoneNumberEntering title={'Телефон'} formik={formik}/>
-            <OperatorInputEntering title={'Оператор'} options={optionsForOperators} />
-            <SliderInputEntering title={'Минуты'}/>
-            <SliderInputEntering title={'Интернет'}/> <ChoiceServices/>
+            <OperatorInputEntering title={'Оператор'} options={optionsForOperators}/>
+            <SliderInputEntering title={'Минуты (не готов)'}/>
+            <SliderInputEntering title={'Интернет (не готов)'}/> <ChoiceServices/>
             <SocialNetworks/>
             <SuperButton operatorEntering={operatorEntering}
                          textArrForButton={textArrForButton}
+                         disabled={phoneEntering === ''}
                          phoneEntering={phoneEntering}
                          priceObj={priceObj}
-                         service={service}
-                         disabled={false}/>
+                         service={service}/>
         </div>
     );
 };
