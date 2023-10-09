@@ -7,21 +7,23 @@
     align-items: center;
     gap: 15px;
     border-radius: 45px 45px 15px 15px;
+    cursor: pointer;
 }
 
 .social {
     background-color: #FFFFFF;
+
 }
 
 .unavailableSocial {
-    background-color: #A5ADB4FF;
+    /*background-color: #A5ADB4FF;*/
 }
 
 .container img {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-}
+    }
 
 .container span {
     display: flex;
@@ -32,7 +34,6 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;

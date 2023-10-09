@@ -41,7 +41,7 @@
 /*    line-height: 24px; !* 100% *!*/
 /*}*/
 
-.SuperSelect option {
+.SuperSelectOption {
     border-radius: 8px;
     border: 1px solid #B8C6CF;
     background: #FFF;

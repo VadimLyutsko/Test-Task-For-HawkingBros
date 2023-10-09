@@ -1,5 +1,7 @@
 import {Dispatch} from 'redux'
 
+const PHONE_NUMBER='SET-PHONE-NUMBER'
+
 const initialState = {
     phoneNumber: '',
 }
@@ -7,7 +9,7 @@ type InitialStateType = typeof initialState
 
 export const phoneEnteringReducer = (state: InitialStateType = initialState, action: ActionsType): InitialStateType => {
     switch (action.type) {
-        case 'EnterPhoneNumber':
+        case PHONE_NUMBER:
             return {...state, phoneNumber: action.phoneNumber}
         default:
             return state
@@ -15,7 +17,7 @@ export const phoneEnteringReducer = (state: InitialStateType = initialState, act
 }
 // actions
 export const setPhoneNumberAC = (phoneNumber: string) =>
-    ({type: 'EnterPhoneNumber', phoneNumber} as const)
+    ({type: PHONE_NUMBER, phoneNumber} as const)
 
 
 // thunks
@@ -27,19 +29,6 @@ export const phoneTC = (number:string) => (dispatch: Dispatch) => {
 
     // ниже делаем запросы при необходимости (сохраняем куда-то на бэк) и всевозможные манипуляции
 
-    // authAPI.me().then(res => {
-    //     debugger
-    //     if (res.data.resultCode === Result_Code.Ok) {
-    //         dispatch(setIsLoggedInAC(true));
-    //         dispatch(setIsInitializedAC(true))
-    //         dispatch(setAppStatusAC('succeeded'))
-    //     } else {
-    //         dispatch(setIsInitializedAC(true))
-    //         handleServerAppError(res.data, dispatch);
-    //     }
-    // }).catch(err => {
-    //     handleServerNetworkError(err, dispatch)
-    // })
 }
 
 

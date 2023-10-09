@@ -35,104 +35,8 @@
     align-items: center;
     /*gap: 15px;*/
     /*background-color: #fff;*/
+    cursor: pointer;
 }
-
-
-
-
-
-/*.checkboxOther {*/
-/*    display: block;*/
-/*    margin: 0 0 10px 0;*/
-/*    cursor: pointer;*/
-/*    user-select: none;*/
-/*    position: relative;*/
-/*}*/
-/*.checkboxOther input[type=checkbox] {*/
-/*    position: absolute;*/
-/*    z-index: -1;*/
-/*    opacity: 0;*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*}*/
-/*.checkboxOther span {*/
-/*    display: inline-block;*/
-/*    position: relative;*/
-/*    padding: 0 0 0 35px;*/
-/*    line-height: 22px;*/
-/*}*/
-/*.checkboxOther span:before {*/
-/*    content: "";*/
-/*    display: inline-block;*/
-/*    width: 24px;*/
-/*    height: 24px;*/
-/*    flex-shrink: 0;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    transition: background 0.3s ease;*/
-/*    border-radius: 5px;*/
-/*    background: url('checkbox.svg') 0 0 no-repeat;*/
-/*}*/
-
-/*!* Checked *!*/
-/*.checkboxOther input[type=checkbox]:checked + span:before {*/
-/*    background-image: url('check.svg');*/
-/*    background-color: #7A5CFA;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*!* Focus *!*/
-/*.focused span:before {*/
-/*    box-shadow: 0 0 0 0.2rem rgba(122,92,250,.25);*/
-/*}*/
-
-/*!* Hover *!*/
-/*.checkboxOther span:hover:before {*/
-/*    filter: brightness(110%);*/
-/*}*/
-
-/*!* Active *!*/
-/*.checkboxOther span:active:before {*/
-/*    filter: brightness(80%);*/
-/*}*/
-
-/*!* Disabled *!*/
-/*.checkboxOther input[type=checkbox]:disabled + span {*/
-/*    color: #666;*/
-/*    cursor: default;*/
-/*}*/
-/*.checkboxOther input[type=checkbox]:disabled + span:before {*/
-/*    filter: grayscale(100%);*/
-/*    opacity: 0.6;*/
-/*}*/
-
-
-
-
-
-
-/*.service input{*/
-/*    display: inline-flex;*/
-/*    padding: 120px;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-
-/*    width: 24px;*/
-/*    height: 24px;*/
-/*    flex-shrink: 0;*/
-
-/*    background-image: url('./checkbox.svg');*/
-/*}*/
-
-/*.service input:checked{*/
-/*    border-radius: 5px;*/
-/*    background-color:   #7A5CFA;*/
-
-/*    !*background-image: url('./check.svg');*!*/
-/*}*/
 
 .service span{
     width: 328px;
@@ -148,7 +52,6 @@
 
 .service b {
     color:  #000;
-    font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;

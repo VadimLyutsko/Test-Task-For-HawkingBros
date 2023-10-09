@@ -1,17 +1,24 @@
 import React, {useEffect} from 'react';
 import styles from './OperatorInputEntering.module.css'
 import SuperSelect from '../SuperComponents/SuperSelect/SuperSelect';
-import {setOperaEnteringAC} from './operatorEntering-reducer';
-import {useAppDispatch} from '../../app/store';
-
-const operators = [
-    {id: 1, value: 'Оператор №1'},
-    {id: 2, value: 'Оператор №2'},
-    {id: 3, value: 'Оператор №3'},
-];
+import {setOperaEnteringAC} from '../../store/operatorEntering-reducer';
+import {useAppDispatch} from '../../store/store';
 
 
-export const OperatorInputEntering = () => {
+
+type OperatorInputEnteringPropsType ={
+    title:string
+    options:OptionsOperatorInputPropsType
+}
+
+type OptionsOperatorInputPropsType = OptionOperatorInputPropsType[]
+
+    type OptionOperatorInputPropsType = {
+        id:number
+        value:string
+    }
+
+export const OperatorInputEntering:React.FC<OperatorInputEnteringPropsType> = ({title,options}) => {
     const dispatch = useAppDispatch()
 
     useEffect(() => {
@@ -26,14 +33,13 @@ export const OperatorInputEntering = () => {
     return (
         <div className={styles.operatorInputEnteringContainer}>
 
-            <h2>Оператор</h2>
+            <h2>{title}</h2>
 
             <SuperSelect
-                id={'hw12-select-theme'}
                 className={styles.select}
+                id={'hw12-select-theme'}
                 onChangeOption={change}
-                options={operators}/>
-
+                options={options}/>
         </div>
     );
 };

@@ -1,10 +1,11 @@
 import {AnyAction, applyMiddleware, combineReducers, legacy_createStore} from 'redux'
-import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
+import {TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
 import thunkMiddleware, {ThunkDispatch} from 'redux-thunk'
-import {phoneEnteringReducer} from '../components/PhoneNumberEntering/phoneEntering-reducer';
-import {operatorEnteringReducer} from '../components/OperatorInputEntering/operatorEntering-reducer';
-import {choiceServicesReducer} from '../components/ChoiceServices/choiceServices-reducer';
-
+import {phoneEnteringReducer} from './phoneEntering-reducer';
+import {operatorEnteringReducer} from './operatorEntering-reducer';
+import {choiceServicesReducer} from './choiceServices-reducer';
+import {socialNetworksReducer} from './social-reduser/socialNetworks-reducer';
+import {priceReducer} from './price-reducer';
 
 
 // объединяя reducer-ы с помощью combineReducers,
@@ -13,7 +14,8 @@ const rootReducer = combineReducers({
     phoneEntering: phoneEnteringReducer,
     operatorEntering: operatorEnteringReducer,
     service: choiceServicesReducer,
-
+    networks: socialNetworksReducer,
+    finalPrice: priceReducer
 
 })
 // непосредственно создаём store

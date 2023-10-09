@@ -12,6 +12,8 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 type SuperCheckboxPropsType = Omit<DefaultInputPropsType, 'type'> & {
     onChangeChecked?: (checked: boolean) => void
     spanClassName?: string
+    textForSpan?: string[]
+    price?: number
 }
 
 const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
@@ -20,8 +22,10 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         onChangeChecked,
         className,
         spanClassName,
-        children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
+        // children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
         id,
+        textForSpan,
+        price,
 
         ...restProps // все остальные пропсы попадут в объект restProps
     }
@@ -45,9 +49,6 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
             {/*</label>*/}
 
 
-
-
-
             <label className={s.label}>
                 <input
                     // id={id}
@@ -56,19 +57,17 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                     className={finalInputClassName}
                     {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
                 />
-                {children && (
+                {textForSpan && (
                     <span
                         id={id ? id + '-span' : undefined}
                         className={s.spanClassName}
                     >
-                    {children}
+                    {textForSpan[0]} {<b>{price}</b>} {textForSpan[1]}
                 </span>
                 )}
             </label>
             {/*// благодаря label нажатие на спан передастся в инпут*/}
         </>
-
-
 
 
     )

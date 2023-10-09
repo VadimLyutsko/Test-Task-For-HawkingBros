@@ -2,7 +2,11 @@ import React from 'react';
 import styles from './SliderInputEntering.module.css'
 import {Slider} from '@mui/material';
 
-export const SliderInputEntering = () => {
+type SliderInputEnteringPropsType={
+    title:string
+}
+
+export const SliderInputEntering:React.FC<SliderInputEnteringPropsType> = ({title}) => {
 
     const marks = [
         {
@@ -34,7 +38,7 @@ export const SliderInputEntering = () => {
 
     return (
         <div className={styles.sliderInputEnteringContainer}>
-            <h2>Минуты</h2>
+            <h2>{title}</h2>
             {/*<div className={styles.inputRange}><input name='operator' list="values"  type="range"/></div>*/}
             {/*<datalist id="values">*/}
             {/*    <option value="0" label="very cold!"></option>*/}
