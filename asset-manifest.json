@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Test-Task-For-HawkingBros/static/css/main.087eb1b4.css",
-    "main.js": "/Test-Task-For-HawkingBros/static/js/main.767e3540.js",
+    "main.css": "/Test-Task-For-HawkingBros/static/css/main.200403e9.css",
+    "main.js": "/Test-Task-For-HawkingBros/static/js/main.788c111c.js",
     "static/js/787.28cb0dcd.chunk.js": "/Test-Task-For-HawkingBros/static/js/787.28cb0dcd.chunk.js",
     "static/media/i+.svg": "/Test-Task-For-HawkingBros/static/media/i+.7c1768481cc3e3897da49a7503cb5cf1.svg",
     "static/media/i-.svg": "/Test-Task-For-HawkingBros/static/media/i-.656cebb3a20bdb22bb8663d08ab79cee.svg",
@@ -16,12 +16,12 @@
     "static/media/f-.svg": "/Test-Task-For-HawkingBros/static/media/f-.0d8b65cdb15cb17a70a7dbe0455c0c04.svg",
     "static/media/f+.svg": "/Test-Task-For-HawkingBros/static/media/f+.5fa1a55c39da6dca7646055fee624976.svg",
     "static/media/checkbox.svg": "/Test-Task-For-HawkingBros/static/media/checkbox.6278b7f8b30894baef88.svg",
-    "main.087eb1b4.css.map": "/Test-Task-For-HawkingBros/static/css/main.087eb1b4.css.map",
-    "main.767e3540.js.map": "/Test-Task-For-HawkingBros/static/js/main.767e3540.js.map",
+    "main.200403e9.css.map": "/Test-Task-For-HawkingBros/static/css/main.200403e9.css.map",
+    "main.788c111c.js.map": "/Test-Task-For-HawkingBros/static/js/main.788c111c.js.map",
     "787.28cb0dcd.chunk.js.map": "/Test-Task-For-HawkingBros/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.087eb1b4.css",
-    "static/js/main.767e3540.js"
+    "static/css/main.200403e9.css",
+    "static/js/main.788c111c.js"
   ]
 }
