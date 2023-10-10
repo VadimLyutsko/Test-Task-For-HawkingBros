@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Test-Task-For-HawkingBros/static/css/main.318e3b3f.css",
-    "main.js": "/Test-Task-For-HawkingBros/static/js/main.c089d610.js",
+    "main.css": "/Test-Task-For-HawkingBros/static/css/main.b58d7520.css",
+    "main.js": "/Test-Task-For-HawkingBros/static/js/main.63adc768.js",
     "static/js/787.28cb0dcd.chunk.js": "/Test-Task-For-HawkingBros/static/js/787.28cb0dcd.chunk.js",
     "static/media/i+.svg": "/Test-Task-For-HawkingBros/static/media/i+.7c1768481cc3e3897da49a7503cb5cf1.svg",
     "static/media/i-.svg": "/Test-Task-For-HawkingBros/static/media/i-.656cebb3a20bdb22bb8663d08ab79cee.svg",
@@ -10,21 +10,21 @@
     "static/media/o+.svg": "/Test-Task-For-HawkingBros/static/media/o+.2749006de2fc1a5837869812b474bdd9.svg",
     "static/media/o-.svg": "/Test-Task-For-HawkingBros/static/media/o-.31d2d22b53292c7b685cb93181f33ab6.svg",
     "index.html": "/Test-Task-For-HawkingBros/index.html",
+    "static/media/range+.svg": "/Test-Task-For-HawkingBros/static/media/range+.d0f09d2a79338f29e53d.svg",
+    "static/media/range-.svg": "/Test-Task-For-HawkingBros/static/media/range-.a4463c981ea8d82119e7.svg",
     "static/media/v+.svg": "/Test-Task-For-HawkingBros/static/media/v+.febfe6a224c13aad1b30cdddb3533557.svg",
     "static/media/v-.svg": "/Test-Task-For-HawkingBros/static/media/v-.0fc6ae1109ceda25088864e30a7569a8.svg",
-    "static/media/range+.svg": "/Test-Task-For-HawkingBros/static/media/range+.13ab39191a7df1d659a9.svg",
-    "static/media/range-.svg": "/Test-Task-For-HawkingBros/static/media/range-.13a869488ab235e06796.svg",
     "static/media/check.svg": "/Test-Task-For-HawkingBros/static/media/check.bd1f36152e170299a4e3.svg",
     "static/media/f-.svg": "/Test-Task-For-HawkingBros/static/media/f-.0d8b65cdb15cb17a70a7dbe0455c0c04.svg",
     "static/media/f+.svg": "/Test-Task-For-HawkingBros/static/media/f+.5fa1a55c39da6dca7646055fee624976.svg",
-    "static/media/errImg.svg": "/Test-Task-For-HawkingBros/static/media/errImg.0455d6dcc85a15f84abc.svg",
+    "static/media/errImg.svg": "/Test-Task-For-HawkingBros/static/media/errImg.6a18d707e32877178e00.svg",
     "static/media/checkbox.svg": "/Test-Task-For-HawkingBros/static/media/checkbox.6278b7f8b30894baef88.svg",
-    "main.318e3b3f.css.map": "/Test-Task-For-HawkingBros/static/css/main.318e3b3f.css.map",
-    "main.c089d610.js.map": "/Test-Task-For-HawkingBros/static/js/main.c089d610.js.map",
+    "main.b58d7520.css.map": "/Test-Task-For-HawkingBros/static/css/main.b58d7520.css.map",
+    "main.63adc768.js.map": "/Test-Task-For-HawkingBros/static/js/main.63adc768.js.map",
     "787.28cb0dcd.chunk.js.map": "/Test-Task-For-HawkingBros/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.318e3b3f.css",
-    "static/js/main.c089d610.js"
+    "static/css/main.b58d7520.css",
+    "static/js/main.63adc768.js"
   ]
 }
