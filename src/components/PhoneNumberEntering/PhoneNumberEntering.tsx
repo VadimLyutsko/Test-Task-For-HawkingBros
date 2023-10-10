@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './PhoneNumberEntering.module.css'
 import SuperInputText from '../SuperComponents/SuperInput/SuperInputText';
+import styles from './PhoneNumberEntering.module.css'
+
 
 type PhoneNumberEnteringPropsType = {
     // formik:FormType

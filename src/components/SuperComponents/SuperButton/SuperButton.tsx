@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from './SuperButton.module.css'
 
+
 type SuperButtonPropsType = {
-    phoneEntering?: string
+    textArrForButton: string[]
     operatorEntering?: string
-    service?: string
+    phoneEntering?: string
     disabled?: boolean
     priceObj: PriceObj
-    textArrForButton: string[]
+    service?: string
+    internet: number
+    minutes: number
 }
 
 type PriceObj = {
@@ -20,19 +23,23 @@ type PriceObj = {
 
 
 export const SuperButton: React.FC<SuperButtonPropsType> = ({
-                                                                textArrForButton,
-                                                                priceObj,
                                                                 operatorEntering,
+                                                                textArrForButton,
                                                                 phoneEntering,
+                                                                priceObj,
+                                                                internet,
                                                                 service,
-                                                                disabled
+                                                                disabled,
+                                                                minutes
                                                             }) => {
 
     const submitJsonObj = {
         'operator': operatorEntering,
         'phoneNumber': phoneEntering,
+        'BuyOutOrLease': service,
         'price': priceObj.price,
-        'BuyOutOrLease': service
+        'internet': internet,
+        'minutes': minutes
     }
     const buttonHandler = () => {
         alert(JSON.stringify(submitJsonObj))

@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './SocialNetworks.module.css'
-import SocialNetwork from './socialNetwork/SocialNetwork';
-import {useAppDispatch, useAppSelector} from '../../store/store';
 import {setNetworkAC} from '../../store/social-reduser/socialNetworks-reducer';
 import {setAddPriceAC, setDecreasePriceAC} from '../../store/price-reducer';
+import {useAppDispatch, useAppSelector} from '../../store/store';
+import SocialNetwork from './socialNetwork/SocialNetwork';
+import styles from './SocialNetworks.module.css'
+
 
 export const SocialNetworks = () => {
     const dispatch = useAppDispatch()

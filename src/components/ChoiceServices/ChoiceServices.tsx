@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import styles from './ChoiceServices.module.css'
-import SuperCheckbox from '../SuperComponents/SuperCheckbox/SuperCheckbox';
-import {useAppDispatch} from '../../store/store';
-import {serviceTC} from '../../store/choiceServices-reducer';
-import {setRedeemAC, setRentAC} from '../../store/price-reducer';
 import {resetAllNetworkAC} from '../../store/social-reduser/socialNetworks-reducer';
+import SuperCheckbox from '../SuperComponents/SuperCheckbox/SuperCheckbox';
+import {setRedeemAC, setRentAC} from '../../store/price-reducer';
+import {serviceTC} from '../../store/choiceServices-reducer';
+import styles from './ChoiceServices.module.css'
+import {useAppDispatch} from '../../store/store';
+
 
 export const ChoiceServices = () => {
 
@@ -54,6 +55,5 @@ export const ChoiceServices = () => {
             </div>
         </div>
     )
-        ;
 };
 

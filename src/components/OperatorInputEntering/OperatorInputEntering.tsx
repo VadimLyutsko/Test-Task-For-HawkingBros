@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
-import styles from './OperatorInputEntering.module.css'
-import SuperSelect from '../SuperComponents/SuperSelect/SuperSelect';
 import {setOperaEnteringAC} from '../../store/operatorEntering-reducer';
+import SuperSelect from '../SuperComponents/SuperSelect/SuperSelect';
+import styles from './OperatorInputEntering.module.css'
 import {useAppDispatch} from '../../store/store';
-
 
 
 type OperatorInputEnteringPropsType ={

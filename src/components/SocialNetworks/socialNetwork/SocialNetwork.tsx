@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './SocialNetwork.module.css';
 
 type SocialNetworkPropsType = {
-    currency: string
-    id: string
-    image: string
-    clickedImage: string
-    price: string
-    clicked: boolean
     networkHandler: (id: string, clicked: boolean, additionalPrice: number) => void
+    clickedImage: string
+    clicked: boolean
+    currency: string
+    image: string
+    price: string
+    id: string
 }
 
 const SocialNetwork: React.FC<SocialNetworkPropsType> = ({
@@ -21,7 +21,9 @@ const SocialNetwork: React.FC<SocialNetworkPropsType> = ({
                                                              clickedImage
                                                          }) => {
 
-    const finalSocialClassName = clicked ? styles.container + ' ' + styles.social : styles.container + ' ' + styles.unavailableSocial
+    const finalSocialClassName = clicked ?
+        styles.container + ' ' + styles.social :
+        styles.container + ' ' + styles.unavailableSocial
 
 
     const networkClickHandler = () => {

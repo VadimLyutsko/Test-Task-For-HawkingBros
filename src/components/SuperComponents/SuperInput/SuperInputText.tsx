@@ -64,24 +64,25 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
                 id={id}
                 type={'text'}
                 onChange={onChangeCallback}
-                onKeyPress={onKeyPressCallback}
+                onKeyDown={onKeyPressCallback}
                 className={finalInputClassName}
                 placeholder={placeholder}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
 
             {
-                error ? <span
-                    id={id ? id + '-span' : undefined}
-                    className={finalSpanClassName}
-                >
-                {error}
-            </span> : <span
-                    id={id ? id + '-span' : undefined}
-                    className={finalSpanClassName}
-                >
-                Обязательное поле
-            </span>
+                error ?
+                    <span
+                        id={id ? id + '-span' : undefined}
+                        className={finalSpanClassName}>
+                            {error}
+                    </span>
+                    :
+                    <span
+                        id={id ? id + '-span' : undefined}
+                        className={finalSpanClassName}>
+                            Обязательное поле
+                    </span>
             }
         </div>
     )

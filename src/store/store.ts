@@ -6,6 +6,8 @@ import {operatorEnteringReducer} from './operatorEntering-reducer';
 import {choiceServicesReducer} from './choiceServices-reducer';
 import {socialNetworksReducer} from './social-reduser/socialNetworks-reducer';
 import {priceReducer} from './price-reducer';
+import {minutesReducer} from './minutes-reducer';
+import {internetReducer} from './internet-reducer';
 
 
 // объединяя reducer-ы с помощью combineReducers,
@@ -15,7 +17,9 @@ const rootReducer = combineReducers({
     operatorEntering: operatorEnteringReducer,
     service: choiceServicesReducer,
     networks: socialNetworksReducer,
-    finalPrice: priceReducer
+    finalPrice: priceReducer,
+    minutesAmount:minutesReducer,
+    internetAmount:internetReducer
 
 })
 // непосредственно создаём store

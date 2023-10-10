@@ -41,14 +41,6 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     return (
 
         <>
-            {/*<input id="one" type="checkbox"/>*/}
-            {/*<label htmlFor="one">*/}
-            {/*    <span></span>*/}
-            {/*    /!*Off*!/*/}
-            {/*    /!*<ins><i> head</i></ins>*!/*/}
-            {/*</label>*/}
-
-
             <label className={s.label}>
                 <input
                     // id={id}
@@ -68,8 +60,6 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
             </label>
             {/*// благодаря label нажатие на спан передастся в инпут*/}
         </>
-
-
     )
 }
 
